@@ -423,6 +423,12 @@ test('simulacion completa: varios vecinos votan y se determina un ganador', () {
 });
 ```
 
+### Resultado final
+
+Con el refactor y la prueba de integración, las 10 pruebas pasan en verde:
+
+![10 de 10 pruebas en verde](capturas/tdd/final_10_de_10.png)
+
 ### Resumen de rondas
 
 | Ronda | Qué se prueba | Pruebas acumuladas |
@@ -437,4 +443,4 @@ test('simulacion completa: varios vecinos votan y se determina un ganador', () {
 | 8 | Refactor sin cambiar comportamiento | 9 |
 | Integración | Plebiscito completo con voto repetido | 10 |
 
-> Las capturas de la ronda 8 y de la prueba de integración no están incluidas. La interfaz (`votacion_screen.dart`) está implementada según el manual, pero no se anexan capturas de la app en ejecución.
+> La interfaz (`votacion_screen.dart`) está implementada según el manual. En la ronda 8 y en la integración no hay captura individual; el resultado conjunto es la captura de 10 de 10.
