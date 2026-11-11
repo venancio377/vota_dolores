@@ -56,7 +56,17 @@ flutter test      # 10 pruebas de la lógica
 flutter run       # abre la app de votación
 ```
 
-## 5. Pruebas con TDD, ronda por ronda
+## 5. Capturas de la app
+
+Pantalla inicial: la pregunta del plebiscito, cuatro opciones con su barra en 0 % y el botón para ver el resultado.
+
+![Pantalla inicial](capturas/app_01_pantalla_inicial.png)
+
+Después de votar por una opción, su barra crece al 100 % y el botón *Ver resultado del plebiscito* abre el diálogo animado con la opción ganadora.
+
+![Resultado del plebiscito](capturas/app_02_resultado_ganador.png)
+
+## 6. Pruebas con TDD, ronda por ronda
 
 Cada ronda sigue el ciclo del manual: primero se escribe una prueba que falla (🔴 rojo), luego el código mínimo para que pase (🟢 verde). Las capturas son del panel *Test Results* de VS Code. Todas las pruebas están en `test/servicio_votacion_test.dart` y comparten esta función de apoyo:
 
@@ -443,4 +453,4 @@ Con el refactor y la prueba de integración, las 10 pruebas pasan en verde:
 | 8 | Refactor sin cambiar comportamiento | 9 |
 | Integración | Plebiscito completo con voto repetido | 10 |
 
-> La interfaz (`votacion_screen.dart`) está implementada según el manual. En la ronda 8 y en la integración no hay captura individual; el resultado conjunto es la captura de 10 de 10.
+> En la ronda 8 y en la prueba de integración no hay captura individual; el resultado conjunto es la captura de 10 de 10.
